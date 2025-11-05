@@ -49,6 +49,5 @@ app.get('/get_roster_data', async (req, res) => {
 });
 
 // 啟動伺服器 (在 Vercel 上這會自動處理)
-app.listen(port, () => {
-    console.log(`代理伺服器已啟動，監聽 Port ${port}`);
-});
+// 新增這行：
+module.exports = app;

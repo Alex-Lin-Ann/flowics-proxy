@@ -1,8 +1,16 @@
 {
-  "rewrites": [
+  "version": 2,
+  "functions": {
+    "api/index.js": { "runtime": "nodejs18.x" }
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/server.js"
+      "src": "/get_roster_data",
+      "dest": "/api"
+    },
+    {
+      "src": "/get_roster_data/(.*)",
+      "dest": "/api"
     }
   ]
 }
