@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // 原始 API 的基礎 URL
 const TARGET_BASE_URL = 'https://xcelleratesports.com/api/v1/rosters/';
 // 從環境變數讀取密鑰，稍後會在 Vercel 平台上設定
-const YOUR_API_KEY = process.env.Zrhm2Gyh1QQ0O3109T9wDi5UHMOAa4fJBSn7AkeYvjubmm1C3m4MX6GkWl63n24T; 
+const YOUR_API_KEY = process.env.XCELLERATE_API_KEY; 
 
 // 這是一個簡單的防呆檢查
 if (!YOUR_API_KEY) {
